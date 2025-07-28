@@ -10,18 +10,6 @@
     font-size: 12px;
 }
 
-.float-sx {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.clearfix::after {
-    display: table;
-    content: '';
-    clear: both;
-}
-
 /* regole header */
 header {
     background-color: grey;
@@ -101,11 +89,77 @@ button {
     }
 }
 
+/* parte banner */
+
+#banner {
+    width: 100%;
+}
+
+/* mobile banner */
+@media screen and (max-width:640px) {
+
+    #banner {
+        display: none;
+    }
+}
+
+
+/* sezione descrizione ricetta */
+#img-sx {
+    width: 200px;
+}
+
+.float-sx {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* mobile descrizione ricetta */
+@media screen and (max-width:640px) {
+#img-sx {
+    margin: 0 auto;
+}
+
+.float-sx {
+float: none;
+display: block;
+   
+}
+}
 
 
 /* regole footer */
 footer {
     background-color: purple;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.footer-col {
+    width: 30%;
+    /*DEBUG*/
+    background-color: aqua;
+}
+
+/* tablet footer */
+@media screen and (max-width:1020px) {
+
+    .footer {
+        height: 150px;
+        display: block;
+    }
+
+    .footer-col {
+    width: 100%;
+    /*DEBUG*/
+    background-color: aqua;
+}
+}
