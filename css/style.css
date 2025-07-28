@@ -123,14 +123,14 @@ button {
 
 /* mobile descrizione ricetta */
 @media screen and (max-width:640px) {
-#img-sx {
-    margin: 0 auto;
+
+    #img-sx {
+        margin: 0 auto;
 }
 
-.float-sx {
-float: none;
-display: block;
-   
+    .float-sx {
+        float: none;
+        display: block;
 }
 }
 
@@ -155,11 +155,11 @@ footer {
     .footer {
         height: 150px;
         display: block;
-    }
+        }
 
     .footer-col {
-    width: 100%;
-    /*DEBUG*/
-    background-color: aqua;
+        width: 100%;
+        /*DEBUG*/
+        background-color: aqua;
 }
 }
