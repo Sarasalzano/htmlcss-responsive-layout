@@ -31,6 +31,10 @@ hr {
     margin-bottom: 20px;
 }
 
+p {
+    line-height: 25px;
+}
+
 /* regole header */
 header {
     height: 90px;
