@@ -56,6 +56,22 @@ header {
     padding-top: 5px;
 }
 
+/* mobile header */
+@media screen and (max-width:640px) {
+
+    header {
+        text-align: center;
+    }
+
+    #title {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 /* parte contenuto */
 .category {
     color: grey;
@@ -68,6 +84,14 @@ header {
     /* DEBUG 
     min-height: 300px;
     background-color: brown;*/
+}
+
+/* mobile parte contenuto */
+@media screen and (max-width:640px) {
+    .container {
+    width: 90%;
+    margin: 30px auto;
+}   
 }
 
 .row {
@@ -88,9 +112,9 @@ header {
 
 .col-dx {
     width: 30%;
-    /* DEBUG 
+    background-color: white;
+    /* DEBUG */
     min-height: 150px;
-    background-color: chartreuse;*/
     padding: 10px 20px;
 }
 
@@ -127,6 +151,27 @@ button {
     padding: 5px 10px;
     margin: 20px 0 ;
     font-weight: bold;
+    background-color: white;
+    border: none;
+}
+
+/* parte icone bottoni */
+
+.fa-brands.fa-facebook {
+    color: #1a77f3;
+}
+
+.fa-brands.fa-twitter {
+    color: #009eff;
+}
+
+.fa-brands.fa-instagram {
+    color: #e577a1;
+}
+
+.fa-brands.fa-pinterest, 
+.fa-brands.fa-youtube {
+    color: red;
 }
 
 /* tablet bottoni social media*/
@@ -150,8 +195,10 @@ button {
 
     button {
         width: 40px;
+        padding: 10px;
+  }
     }
-}
+
 
 /* parte banner */
 
@@ -189,7 +236,7 @@ button {
 @media screen and (max-width:640px) {
 
     #img-sx {
-        margin: 0 auto;
+        margin: 10px auto;
 }
 
     .float-sx {
@@ -203,9 +250,7 @@ button {
 footer {
     background-color: #7c69a4;
     color: white;
-    height: 80px;
     padding: 10px;
-    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,15 +267,27 @@ address {
     font-style: normal;
     margin-top: 5px;
 }
+
 /* tablet footer */
 @media screen and (max-width:1020px) {
 
-    .footer {
-        height: 150px;
+    footer {
         display: block;
-        }
+    }
 
     .footer-col {
-        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
+
+/* tablet footer */
+@media screen and (max-width:1020px) {
+
+    .footer-col {
+        display: block;
+        width: 70%;
+    }
+
 }
