@@ -69,8 +69,43 @@ header {
 
 }
 
+/* parte bottoni social media*/
+
+button {
+    border-radius: 50px;
+    padding: 5px 10px;
+
+}
+
+/* tablet bottoni social media*/
+@media screen and (max-width:1020px) {
+
+    .btn-text {
+        display: none;
+    }
+
+    button {
+        width: 100px;
+    }
+}
+
+/* mobile bottoni social media*/
+@media screen and (max-width:640px) {
+
+    .btn-text {
+        display: none;
+    }
+
+    button {
+        width: 40px;
+    }
+}
+
+
+
 /* regole footer */
 footer {
     background-color: purple;
     height: 100px;
 }
+
