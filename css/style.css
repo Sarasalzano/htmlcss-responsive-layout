@@ -19,6 +19,18 @@ h1 {
     font-size: 5rem;
 }
 
+h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    padding: 20px 0 5px;
+}
+
+hr {
+    border: 1px solid #f7972e;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
 /* regole header */
 header {
     height: 90px;
@@ -86,10 +98,20 @@ h3 {
 
 /* parte bottoni social media*/
 
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
 button {
+    width: 170px;
     border-radius: 50px;
     padding: 5px 10px;
+    margin: 20px 0 ;
+}
 
+.btn-text {
+    font-weight: bold;
 }
 
 /* tablet bottoni social media*/
