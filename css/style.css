@@ -10,16 +10,35 @@
     font-size: 12px;
 }
 
+body {
+    background-color: #f6f5f3;
+}
+
+h1 {
+    color: #4e3969;
+    font-size: 5rem;
+}
+
 /* regole header */
 header {
-    background-color: grey;
-    height: 100px;
+    height: 90px;
+    background-color: white;
+    font-family: "Nerko One", cursive;
+    font-size: 5rem;
+    color: #ff9614;
+    padding-left: 20px;
+    padding-top: 5px;
 }
 
 /* parte contenuto */
+.category {
+    color: grey;
+    font-size: 1.5rem;   
+}
+
 .container {
     width: 70%;
-    margin: 50px auto;
+    margin: 70px auto;
     /* DEBUG */
     min-height: 300px;
     background-color: brown;
@@ -27,6 +46,7 @@ header {
 
 .row {
     display: flex;
+    margin-top: 20px;
 }
 
 .col-sx {
@@ -41,6 +61,13 @@ header {
     /* DEBUG */
     min-height: 150px;
     background-color: chartreuse;
+    padding: 10px 20px;
+}
+
+.col-dx span,
+h3 {
+    display: block;
+    margin: 20px;
 }
 
 /* tablet contenuto video */
