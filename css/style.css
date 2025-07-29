@@ -279,17 +279,9 @@ address {
 
     .footer-col {
         display: block;
+        width: 70%;
         text-align: center;
         margin: 0 auto;
     }
 }
 
-/* tablet footer */
-@media screen and (max-width:1020px) {
-
-    .footer-col {
-        display: block;
-        width: 70%;
-    }
-
-}
